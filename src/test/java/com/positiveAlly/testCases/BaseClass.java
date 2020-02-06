@@ -44,7 +44,7 @@ public class BaseClass
 		logger = Logger.getLogger("Positiveally");
 		PropertyConfigurator.configure("/home/ganesh/eclipse-workspace/PositiveAlly/log4j.properties");
 
-		if (br.equals("firefox")) 
+		if (br.equals("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", readconfig.getFirefoxPath());
 			driver = new FirefoxDriver();
@@ -52,19 +52,17 @@ public class BaseClass
 		else if (br.equals("chrome")) 
 		{
 			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
-            ChromeOptions options = new ChromeOptions();
-//             options.addArguments("disable-infobars");
-//            options.addArguments("--disable-browser-side-navigation");
-//            options.addArguments("--start-maximized");
-            options.addArguments("--no-sandbox");
-//            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--headless");
-//            options.setBinary("/usr/bin/google-chrome-stable");
-//            options.setExperimentalOption("useAutomationExtension", false);
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("disable-infobars");
+			options.addArguments("--disable-browser-side-navigation");
+			options.addArguments("--start-maximized");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--headless");
+			options.setBinary("/usr/bin/google-chrome-stable");
+			options.setExperimentalOption("useAutomationExtension", false);
 			driver = new ChromeDriver(options);
-		} 
-		else if (br.equals("ie")) 
-		{
+		} else if (br.equals("ie")) {
 			System.setProperty("webdriver.ie.driver", readconfig.getIePath());
 			driver = new InternetExplorerDriver();
 		}
