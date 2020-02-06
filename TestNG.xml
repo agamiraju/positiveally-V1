@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "PositiveAlly">
+
+<listeners>
+<listener class-name = "com.positiveAlly.utilities.Reporting"/>
+</listeners>
+
+<test name = "PositiveAlly Test">
+<parameter name = "browser" value = "chrome"/> 
+<classes>
+  
+       <class name ="com.positiveAlly.testCases.TC_LoginTest_001"/> 
+      <!-- <class name ="com.positiveAlly.testCases.TC_LoginDDT_002"/>  -->
+      
+      <!-- <class name ="com.positiveAlly.testCases.TC_CreateNewTest_003"/>  -->  
+      <!--  <class name ="com.positiveAlly.testCases.TC_AdminLoginTest_001"/>  --> 
+	  
+	   <!-- <class name ="com.positiveAlly.testCases.TC_Admin_AddUserAccountTest_002"/> 
+       <class name ="com.positiveAlly.testCases.TC_Student_Registration_VA_005"/>  --> 
+       
+       <!-- <class name = "com.positiveAlly.testCases.TC_RegisterSibling_004"/> --> 
+ 	   
+ 	   <!-- <class name ="com.positiveAlly.testCases.TC_Create_Account_Washington_006"/>  -->
+ 	   <!-- <class name ="com.positiveAlly.testCases.TC_Student_Registration_WA_AfterSchoolTest_013"/> -->
+      
+       <!-- <class name ="com.positiveAlly.testCases.TC_VerifyParentAccount_006"/>  -->
+	   <!-- <class name ="com.positiveAlly.testCases.TC_AdminUserList_003"/> -->  
+	  
+	  <!-- <class name ="com.positiveAlly.testCases.TC_Re_RegistrationTest_007"/> 
+	  <class name ="com.positiveAlly.testCases.TC_Re_Registration_SummerTest_008"/>  --> 
+	 
+	  <!-- <class name = "com.positiveAlly.testCases.TC_Registration_WaitlistTest_009"/> -->
+      <!-- <class name = "com.positiveAlly.testCases.TC_AddUser_GrouponTest_010"/> --> 
+     
+     <!-- <class name = "com.positiveAlly.testCases.Registration_StudentWA_After_SummerTest_011"/> -->
+     <!-- <class name = "com.positiveAlly.testCases.UserAccount_Verify_AdminTest_012"/> -->
+
+
+
+</classes>
+</test>
+</suite>

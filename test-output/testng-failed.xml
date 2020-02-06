@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PositiveAlly]">
+  <listeners>
+    <listener class-name="com.positiveAlly.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="PositiveAlly Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.positiveAlly.testCases.TC_LoginTest_001">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.positiveAlly.testCases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- PositiveAlly Test(failed) -->
+</suite> <!-- Failed suite [PositiveAlly] -->
