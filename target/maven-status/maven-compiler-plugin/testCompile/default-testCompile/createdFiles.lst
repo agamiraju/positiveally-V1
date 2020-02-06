@@ -8,6 +8,7 @@ test/Digital_Signature.class
 com/positiveAlly/pageObjects/Student_Registration_VAPage.class
 com/positiveAlly/testCases/TC_AdminUserList_003.class
 com/positiveAlly/pageObjects/UserAccount_Verify_AdminPage.class
+com/positiveAlly/testCases/Sample_Edit.class
 com/positiveAlly/testCases/TC_Registration_WaitlistTest_009.class
 test/Switch_Tab_Chrome.class
 test/Handle_browser.class

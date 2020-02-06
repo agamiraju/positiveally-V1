@@ -1,6 +1,7 @@
 package com.positiveAlly.testCases;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -14,15 +15,16 @@ public class TC_LoginTest_001 extends BaseClass {
 		logger.info("URL is opened!");
 		LoginPage lp = new LoginPage(driver);
 		lp.setUserName(username);
-		logger.info("Username is Entered");
-		Thread.sleep(1000);
+		logger.info("Username is Entered.");
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		lp.setPassword(password);
-		logger.info("Password is Entered");
-		Thread.sleep(1000);
+		logger.info("Password is Entered.");
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		lp.clickLogin();
-		Thread.sleep(1000);
+		logger.info("Clicked on Login button!");
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
-		if (driver.findElement(By.linkText("Edit Signature")).isDisplayed() == true)
+		if (driver.findElement(By.linkText("Welcome Raju")).isDisplayed() == true)
 
 		{
 			Assert.assertTrue(true);
