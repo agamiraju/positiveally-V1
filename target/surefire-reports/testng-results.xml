@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveAlly" duration-ms="4368" started-at="2020-02-06T09:18:45Z" finished-at="2020-02-06T09:18:49Z">
+  <suite name="PositiveAlly" duration-ms="5697" started-at="2020-02-06T12:27:46Z" finished-at="2020-02-06T12:27:52Z">
     <groups>
     </groups>
-    <test name="PositiveAlly Test" duration-ms="4368" started-at="2020-02-06T09:18:45Z" finished-at="2020-02-06T09:18:49Z">
+    <test name="PositiveAlly Test" duration-ms="5697" started-at="2020-02-06T12:27:46Z" finished-at="2020-02-06T12:27:52Z">
       <class name="com.positiveAlly.testCases.TC_LoginTest_001">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.positiveAlly.testCases.TC_LoginTest_001@337d0578]" name="setup" is-config="true" duration-ms="2681" started-at="2020-02-06T09:18:45Z" finished-at="2020-02-06T09:18:47Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.positiveAlly.testCases.TC_LoginTest_001@7f560810]" name="setup" is-config="true" duration-ms="4096" started-at="2020-02-06T12:27:47Z" finished-at="2020-02-06T12:27:51Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.positiveAlly.testCases.TC_LoginTest_001@337d0578]" name="loginTest" duration-ms="1410" started-at="2020-02-06T09:18:47Z" finished-at="2020-02-06T09:18:49Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.positiveAlly.testCases.TC_LoginTest_001@7f560810]" name="loginTest" duration-ms="1255" started-at="2020-02-06T12:27:51Z" finished-at="2020-02-06T12:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.positiveAlly.testCases.TC_LoginTest_001@337d0578]" name="tearDown" is-config="true" duration-ms="120" started-at="2020-02-06T09:18:49Z" finished-at="2020-02-06T09:18:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.positiveAlly.testCases.TC_LoginTest_001@7f560810]" name="tearDown" is-config="true" duration-ms="70" started-at="2020-02-06T12:27:52Z" finished-at="2020-02-06T12:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
