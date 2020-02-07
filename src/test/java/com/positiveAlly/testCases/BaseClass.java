@@ -62,7 +62,9 @@ public class BaseClass
 	        options.addArguments("--disable-gpu"); // applicable to windows os only
 //	        options.addArguments(); // overcome limited resource problems
 			driver = new ChromeDriver(options);
-		} else if (br.equals("ie")) {
+		} 
+		else if (br.equals("ie"))
+		{
 			System.setProperty("webdriver.ie.driver", readconfig.getIePath());
 			driver = new InternetExplorerDriver();
 		}
@@ -85,7 +87,7 @@ public class BaseClass
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
 		FileUtils.copyFile(source, target);
-		System.out.println("Screenshot taken");
+		System.out.println("Screenshot taken.");
 	}
 
 }
